@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Movie Booking System</h1>
+        <nav>
+            <ul>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#booking">Book Tickets</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Movies Section -->
+        <section id="movies" class="container">
+            <h2>Available Movies</h2>
+
+            <!-- Movie Images Grid -->
+            <div class="movie-grid">
+                <div class="movie-item">
+                    <img src="C:\Users\HP\Pictures\ava.jpg" alt="Avatar 2">
+                    <p>Avatar 2</p>
+                </div>
+                <div class="movie-item">
+                    <img src="C:\Users\HP\Pictures\bat.jpg" alt="The Batman">
+                    <p>The Batman</p>
+                </div>
+                <div class="movie-item">
+                    <img src="C:\Users\HP\Pictures\sp.jpg" alt="Spider-Man: No Way Home">
+                    <p>Spider-Man: No Way Home</p>
+                </div>
+                <div class="movie-item">
+                    <img src="C:\Users\HP\Pictures\j.jpg" alt="Jurassic World: Dominion">
+                    <p>Jurassic World: Dominion</p>
+                </div>
+                <div class="movie-item">
+                    <img src="C:\Users\HP\Pictures\t.jpg" alt="Top Gun: Maverick">
+                    <p>Top Gun: Maverick</p>
+                </div>
+            </div>
+
+            <!-- Movie Details Table -->
+            <table>
+                <tr>
+                    <th>Movie Title</th> <!-- Added Movie Title Column -->
+                    <th>Showtime</th>
+                    <th>Price</th>
+                    <th>No. of People</th>
+                </tr>
+                <tr>
+                    <td>Avatar 2</td> <!-- Movie Title -->
+                    <td>12:00 PM</td>
+                    <td>$10</td>
+                    <td><input type="number" min="1" value="1"></td>
+                </tr>
+                <tr>
+                    <td>The Batman</td> <!-- Movie Title -->
+                    <td>3:00 PM</td>
+                    <td>$12</td>
+                    <td><input type="number" min="1" value="1"></td>
+                </tr>
+                <tr>
+                    <td>Spider-Man: No Way Home</td> <!-- Movie Title -->
+                    <td>6:00 PM</td>
+                    <td>$11</td>
+                    <td><input type="number" min="1" value="1"></td>
+                </tr>
+                <tr>
+                    <td>Jurassic World: Dominion</td> <!-- Movie Title -->
+                    <td>9:00 PM</td>
+                    <td>$13</td>
+                    <td><input type="number" min="1" value="1"></td>
+                </tr>
+                <tr>
+                    <td>Top Gun: Maverick</td> <!-- Movie Title -->
+                    <td>5:00 PM</td>
+                    <td>$14</td>
+                    <td><input type="number" min="1" value="1"></td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="container">
+            <h2>Book Your Tickets</h2>
+            <form action="#" method="post">
+                <!-- Select Movie -->
+                <label for="movie">Select Movie:</label><br/>
+                <select id="movie" name="movie" required>
+                    <!-- Options for movies -->
+                    <option value="">--Select a Movie--</option>
+                    <!-- Options for movies -->
+                    <option value="avatar">Avatar 2</option>
+                    <option value="batman">The Batman</option>
+                    <option value="spiderman">Spider-Man: No Way Home</option>
+                    <option value="jurassic">Jurassic World: Dominion</option>
+                    <option value="topgun">Top Gun: Maverick</option>
+
+                </select><br/><br/>
+
+                <!-- Number of People -->
+                <label for="numPeople">Number of People:</label><br/>
+                <input type="number" id="numPeople" name="numPeople" min="1" required><br/><br/>
+
+                <!-- Name and Email -->
+                <label for="name">Name:</label><br/>
+                <input type="text" id="name" name="name" required><br/><br/>
+
+                <!-- Email Input Field -->
+                <label for="email">Email:</label><br/>
+                <input type='email' id='email' name='email' required/><br/><br/>
+
+                <!-- Submit Button -->
+                <input type='submit' value='Book Now'/>
+            </form>
+
+            <!-- Audio file examples -->
+            <h3>Listen to Movie Soundtracks</h3>
+
+            <!-- First Audio Track -->
+            <audio controls style='margin-bottom: 10px;'>
+               <source src='https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' type='audio/mpeg'>
+               Your browser does not support the audio element.
+            </audio>
+
+            <!-- Second Audio Track -->
+            <audio controls style='margin-bottom: 10px;'>
+               <source src='https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' type='audio/mpeg'>
+               Your browser does not support the audio element.
+            </audio>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id='contact' class='container'>
+           <h2>Contact Us</h2>
+
+           <!-- Feedback Form -->
+           <form action='#' method='post'>
+              Please leave your feedback:<br/>
+              <textarea rows='4' cols='50' placeholder='Enter your feedback here...'></textarea><br/><br/>
+
+              If you have any questions, feel free to reach out at contact@moviebooking.com.<br/><br/>
+
+              Your Name:<br/>
+              <input type='text' placeholder='Enter your name'/><br/><br/>
+
+              Your Email:<br/>
+              <input type='email' placeholder='Enter your email'/><br/><br/>
+
+              <input type='submit' value='Send Feedback'/>
+           </form>
+
+       </section>
+
+   </main>
+
+   <!-- Footer Section -->
+   <footer style='background-color:#8fdcf0; color:rgb(7, 7, 7); padding:10px; text-align:center;'>
+       &copy; 2025 Movie Booking System. All rights reserved.
+   </footer>
+
+   </body>
+
+   <!-- Closing HTML Tag -->
+   </html>
+
